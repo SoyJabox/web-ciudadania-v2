@@ -279,9 +279,9 @@ button { font: inherit; cursor: pointer; }
 }
 .theme-toggle svg { display: block; flex-shrink: 0; }
 .theme-toggle:hover { background: var(--surface-alt); border-color: var(--accent); }
-.theme-icon-dark { display: none; }
-:root[data-theme='dark'] .theme-icon-light { display: none; }
-:root[data-theme='dark'] .theme-icon-dark { display: block; }
+.theme-toggle .theme-icon-dark { display: none; }
+:root[data-theme='dark'] .theme-toggle .theme-icon-light { display: none; }
+:root[data-theme='dark'] .theme-toggle .theme-icon-dark { display: block; }
 
 /* ---------- Migas ---------- */
 .breadcrumbs { padding-block: .95rem 0; font-size: .83rem; color: var(--muted); }
