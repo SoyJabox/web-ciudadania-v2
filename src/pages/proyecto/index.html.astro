@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/proyecto/index.html?raw';
+---
+<Base title={"El proyecto | Horizonte Digital"} description={"Propósito, organización, accesibilidad y funcionamiento de este sitio educativo de ciudadanía y tecnología."} theme="theme-technology" depth={1}>
+  <Contenido html={contenido} />
+</Base>

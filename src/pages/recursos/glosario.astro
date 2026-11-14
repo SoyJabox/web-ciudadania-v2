@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/recursos/glosario.html?raw';
+---
+<Base title={"Glosario | Horizonte Digital"} description={"Veinticuatro conceptos de ciudadanía y tecnología, con ejemplos, preguntas y enlaces para profundizar."} theme="theme-rights" depth={1}>
+  <Contenido html={contenido} />
+</Base>

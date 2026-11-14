@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 330" fill="none">
+  <circle cx="222" cy="148" r="126" fill="#f6f2e5"/>
+  <path d="M53 264H387" stroke="#c4cebb" stroke-width="2" stroke-linecap="round"/>
+  <!-- Una conversación compartida, con libros y herramientas digitales. -->
+  <path d="M155 47h62a15 15 0 0 1 15 15v22a15 15 0 0 1-15 15h-22l-17 14V99h-23a15 15 0 0 1-15-15V62a15 15 0 0 1 15-15Z" fill="#d6b674"/>
+  <path d="M159 67h54M159 79h34" stroke="#786137" stroke-width="3" stroke-linecap="round"/>
+  <path d="M276 69h41a12 12 0 0 1 12 12v12a12 12 0 0 1-12 12h-6v12l-15-12h-20a12 12 0 0 1-12-12V81a12 12 0 0 1 12-12Z" fill="#c4cebb"/>
+  <circle cx="282" cy="87" r="3" fill="#52725a"/><circle cx="296" cy="87" r="3" fill="#52725a"/><circle cx="310" cy="87" r="3" fill="#52725a"/>
+  <!-- Estudiante central -->
+  <path d="M181 200v-30c0-22 15-37 37-37s40 15 40 37v30" fill="#71927b"/>
+  <path d="M208 124v20q11 13 23 0v-20" fill="#bb825f"/>
+  <ellipse cx="220" cy="112" rx="24" ry="29" fill="#d5a180"/>
+  <path d="M195 113c-9-37 42-48 51-18l-1 18-9-18c-9 8-24 9-34 7l-4 16Z" fill="#243d35"/>
+  <path d="M209 119q10 9 20 0" stroke="#87553d" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="211" cy="110" r="2" fill="#243d35"/><circle cx="229" cy="110" r="2" fill="#243d35"/>
+  <!-- Estudiante a la izquierda -->
+  <path d="M60 250v-63c0-26 16-43 43-43s43 18 43 43v63" fill="#284e3f"/>
+  <path d="M89 134v24q12 11 26-1v-25" fill="#9e664b"/>
+  <ellipse cx="104" cy="119" rx="25" ry="31" fill="#b9805e"/>
+  <path d="M77 120c-8-9-7-22 0-26-2-13 13-23 23-17 10-9 25-3 28 8 13 2 18 17 8 28l-10 7-3-20c-11 8-24 8-34 3l-5 22Z" fill="#243d35"/>
+  <circle cx="101" cy="119" r="2" fill="#243d35"/><circle cx="119" cy="118" r="2" fill="#243d35"/>
+  <path d="M104 131q8 5 15-2" stroke="#70452f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M82 189l15 34 55 1" stroke="#b9805e" stroke-width="17" stroke-linecap="round"/>
+  <path d="M132 180l25 23 24-22" stroke="#b9805e" stroke-width="15" stroke-linecap="round"/>
+  <!-- Estudiante a la derecha -->
+  <path d="M299 153c-10-42 5-71 33-71 33 0 43 29 35 76Z" fill="#584b3e"/>
+  <path d="M292 252v-59c0-30 13-45 39-45s46 17 46 45v59" fill="#c89980"/>
+  <path d="M318 132v24q12 10 23-1v-23" fill="#d5a180"/>
+  <ellipse cx="329" cy="118" rx="24" ry="29" fill="#edc3a0"/>
+  <path d="M303 116l5-25 29-6 16 14-2 16c-9-3-18-11-22-20-3 10-12 17-26 21Z" fill="#584b3e"/>
+  <circle cx="317" cy="119" r="2" fill="#243d35"/><circle cx="333" cy="120" r="2" fill="#243d35"/>
+  <path d="M315 130q8 6 16 0" stroke="#a36f51" stroke-width="2" stroke-linecap="round"/>
+  <path d="M357 190l-14 35h-54" stroke="#edc3a0" stroke-width="17" stroke-linecap="round"/>
+  <!-- Mesa, cuaderno y portátil -->
+  <path d="M64 237h313l19 24H46Z" fill="#d6b674"/>
+  <path d="M74 261v46M367 261v46" stroke="#8c7954" stroke-width="10"/>
+  <path d="M49 261h344" stroke="#b79c61" stroke-width="7" stroke-linecap="round"/>
+  <path d="M182 192h79l-13 48h-78Z" fill="#8fa9b5" stroke="#52727e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M169 241h99" stroke="#52727e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="218" cy="217" r="5" fill="#e9eee2"/>
+  <path d="M103 242l25-15 35 9-24 15Z" fill="#fbfaf7"/>
+  <path d="M128 233l21 5M122 238l18 5" stroke="#91ad96" stroke-width="2"/>
+  <path d="M279 247h43l-5-17h-39Z" fill="#fbfaf7"/>
+  <path d="M289 235l21 5" stroke="#91ad96" stroke-width="2"/>
+</svg>

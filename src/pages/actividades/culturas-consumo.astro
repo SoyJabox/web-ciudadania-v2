@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/actividades/culturas-consumo.html?raw';
+---
+<Base title={"Repaso de Culturas y consumo | Horizonte Digital"} description={"Cuestionario con cinco preguntas, respuestas explicadas y reintento sobre Culturas y consumo."} theme="theme-culture" depth={1} quiz>
+  <Contenido html={contenido} />
+</Base>

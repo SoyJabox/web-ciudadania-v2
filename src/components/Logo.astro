@@ -1,0 +1,11 @@
+---
+const { class: className = 'brand-symbol' } = Astro.props;
+---
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="15 35 150 100" width="54" height="36" aria-hidden="true">
+  <g transform="translate(5, 5)">
+    <path d="M 65 90 A 35 35 0 0 0 135 90 Z" fill="var(--logo-sun, #d9b687)" />
+    <path d="M 35 90 A 50 50 0 0 1 135 90" fill="none" stroke="var(--logo-arc, #284e3f)" stroke-width="16" stroke-linecap="round" />
+    <path d="M 65 90 A 25 25 0 0 1 115 90" fill="none" stroke="var(--logo-inner, #243d35)" stroke-width="12" stroke-linecap="round" />
+    <line x1="15" y1="90" x2="155" y2="90" stroke="var(--logo-inner, #243d35)" stroke-width="7" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+---
+import Logo from './Logo.astro';
+const { root } = Astro.props;
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="site-name">
+        <Logo />
+        <span class="brand-copy">
+          <span class="brand-title">HORIZONTE DIGITAL</span>
+          <span class="brand-tagline">Ciudadanía y sociedad del conocimiento</span>
+        </span>
+      </p>
+      <p class="footer-handwriting">Preguntar. Aprender. Compartir.</p>
+      <p class="footer-note">Recurso educativo para Educación Media Superior (DGETP, tramo 7). Siempre hay otra pregunta por descubrir.</p>
+    </div>
+    <nav class="footer-col" aria-label="Rutas de estudio">
+      <p class="footer-heading">Rutas de estudio</p>
+      <a href={`${root}temas/derechos-humanos/index.html`}>01 · Derechos humanos</a>
+      <a href={`${root}temas/ciudadania-digital/index.html`}>02 · Ciudadanía digital</a>
+      <a href={`${root}temas/culturas-consumo/index.html`}>03 · Culturas y consumo</a>
+      <a href={`${root}temas/tecnologia-sociedad/index.html`}>04 · Tecnología y sociedad</a>
+    </nav>
+    <nav class="footer-col" aria-label="Zona práctica">
+      <p class="footer-heading">Zona práctica</p>
+      <a href={`${root}casos/index.html`}>Casos para pensar</a>
+      <a href={`${root}investigar/index.html`}>Investigar</a>
+      <a href={`${root}actividades/index.html`}>Actividades y cuestionarios</a>
+      <a href={`${root}recursos/glosario.html`}>Glosario</a>
+    </nav>
+    <nav class="footer-col" aria-label="Recursos y proyecto">
+      <p class="footer-heading">Docencia y proyecto</p>
+      <a href={`${root}recursos/docentes.html`}>Para docentes</a>
+      <a href={`${root}recursos/derechos-fuentes.html`}>Derechos y fuentes</a>
+      <a href={`${root}proyecto/index.html`}>El proyecto</a>
+      <a href={`${root}recursos/informacion-legal.html`}>Información legal y privacidad</a>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <span>Horizonte Digital · Educación Media Superior (DGETP)</span>
+    <a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>

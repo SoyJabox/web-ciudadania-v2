@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/actividades/index.html?raw';
+---
+<Base title={"Actividades | Horizonte Digital"} description={"Cuestionarios por tema y propuestas para debatir, investigar y crear en clase."} theme="theme-citizenship" depth={1}>
+  <Contenido html={contenido} />
+</Base>

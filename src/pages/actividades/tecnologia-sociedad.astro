@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/actividades/tecnologia-sociedad.html?raw';
+---
+<Base title={"Repaso de Tecnología y sociedad | Horizonte Digital"} description={"Cuestionario con cinco preguntas, respuestas explicadas y reintento sobre Tecnología y sociedad."} theme="theme-technology" depth={1} quiz>
+  <Contenido html={contenido} />
+</Base>

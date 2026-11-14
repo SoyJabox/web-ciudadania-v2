@@ -1,0 +1,50 @@
+---
+import '@fontsource-variable/plus-jakarta-sans';
+import '@fontsource-variable/newsreader';
+import '@fontsource-variable/newsreader/wght-italic.css';
+import '@fontsource-variable/dm-sans';
+import '../styles/site.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { title, description, theme = '', depth = 0, quiz = false, noindex = false, absoluteRoot = false } = Astro.props;
+const root = absoluteRoot ? '/' : '../'.repeat(depth);
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>{title}</title>
+    <link rel="icon" href={`${root}assets/identidad_visual/marca-web.svg`} type="image/svg+xml" />
+    <script is:inline>
+      try {
+        var t = localStorage.getItem('hd-theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch (e) {}
+    </script>
+    {quiz && <script is:inline src={`${root}js/quiz.js`} defer></script>}
+  </head>
+  <body class={theme || undefined}>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <Header root={root} />
+    <main id="contenido"><slot /></main>
+    <Footer root={root} />
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var isDark = document.documentElement.dataset.theme === 'dark';
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.dataset.theme = next === 'dark' ? 'dark' : '';
+          try { localStorage.setItem('hd-theme', next); } catch (e) {}
+        });
+      })();
+    </script>
+  </body>
+</html>

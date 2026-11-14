@@ -1,0 +1,36 @@
+---
+import Logo from './Logo.astro';
+const { root } = Astro.props;
+---
+<header class="site-header" id="inicio">
+  <div class="container header-inner">
+    <a class="site-name" href={`${root}index.html`}>
+      <Logo />
+      <span class="brand-copy">
+        <span class="brand-title">HORIZONTE DIGITAL</span>
+        <span class="brand-tagline">Ciudadanía y Sociedad del Conocimiento · DGETP</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href={`${root}index.html#temas`}>Temas</a>
+      <a href={`${root}casos/index.html`}>Casos</a>
+      <a href={`${root}investigar/index.html`}>Investigar</a>
+      <a href={`${root}actividades/index.html`}>Actividades</a>
+      <details class="nav-resources">
+        <summary>Recursos <span aria-hidden="true">+</span></summary>
+        <div class="resource-menu">
+          <a href={`${root}recursos/docentes.html`}>Para docentes</a>
+          <a href={`${root}recursos/derechos-fuentes.html`}>Derechos y fuentes</a>
+          <a href={`${root}recursos/glosario.html`}>Glosario</a>
+          <a href={`${root}proyecto/index.html`}>El proyecto</a>
+        </div>
+      </details>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo claro u oscuro" title="Cambiar tema">
+        <span class="theme-icon-light" aria-hidden="true">☀</span>
+        <span class="theme-icon-dark" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </div>
+</header>

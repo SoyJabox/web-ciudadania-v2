@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/casos/prueba-gratuita.html?raw';
+---
+<Base title={"La prueba que después se cobra | Horizonte Digital"} description={"Una plataforma anuncia una prueba gratuita. Antes de confirmar, aparece una condición de renovación mensual. El botón para aceptar es muy visible, pero la explicación del costo posterior está al final de un texto largo."} theme="theme-culture" depth={1}>
+  <Contenido html={contenido} />
+</Base>

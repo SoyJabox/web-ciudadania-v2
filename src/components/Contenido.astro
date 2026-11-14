@@ -1,0 +1,38 @@
+---
+// Inserta el contenido de cada página. En las lecturas añade un índice lateral (tabla de contenidos)
+// generado en la compilación a partir de los <h2>, sin JavaScript.
+const { html } = Astro.props;
+const marca = '<article class="reading container">';
+let salida = html;
+
+if (html.includes(marca)) {
+  const inicio = html.indexOf(marca) + marca.length;
+  const fin = html.lastIndexOf('</article>');
+  let cuerpo = html.slice(inicio, fin);
+  const entradas = [];
+  const usados = new Set([...cuerpo.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
+  const limpiar = (s) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+  const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  cuerpo = cuerpo.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/g, (_, attrs, texto) => {
+    const t = limpiar(texto);
+    let id = (attrs.match(/\sid="([^"]+)"/) || [])[1];
+    if (!id) {
+      let base = 's-' + slug(t) || 's';
+      id = base; let n = 2;
+      while (usados.has(id)) id = `${base}-${n++}`;
+      usados.add(id);
+      attrs += ` id="${id}"`;
+    }
+    entradas.push({ id, t });
+    return `<h2${attrs}>${texto}</h2>`;
+  });
+
+  const toc = entradas.map((e) => `<a href="#${e.id}">${e.t}</a>`).join('');
+  salida = html.slice(0, html.indexOf(marca)) +
+    `<div class="container reading-shell"><article class="reading">` +
+    cuerpo + `</article><aside class="reading-toc" aria-label="En esta lectura"><p class="eyebrow">En esta lectura</p>${toc}</aside></div>` +
+    html.slice(fin + '</article>'.length);
+}
+---
+<Fragment set:html={salida} />

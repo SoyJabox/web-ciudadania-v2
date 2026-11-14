@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contenido from '../../components/Contenido.astro';
+import contenido from '../../content/actividades/ciudadania-digital.html?raw';
+---
+<Base title={"Repaso de Ciudadanía digital | Horizonte Digital"} description={"Cuestionario con cinco preguntas, respuestas explicadas y reintento sobre Ciudadanía digital."} theme="theme-citizenship" depth={1} quiz>
+  <Contenido html={contenido} />
+</Base>

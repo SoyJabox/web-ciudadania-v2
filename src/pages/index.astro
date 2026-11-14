@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import Contenido from '../components/Contenido.astro';
+import contenido from '../content/index.html?raw';
+---
+<Base title={"Ciudadanía y sociedad del conocimiento | Horizonte Digital"} description={"Un espacio educativo para explorar ciudadanía, derechos, cultura digital y tecnología. Conceptos y preguntas para aprender y reflexionar en clase."} theme="" depth={0}>
+  <Contenido html={contenido} />
+</Base>

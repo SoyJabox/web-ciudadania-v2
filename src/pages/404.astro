@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import Contenido from '../components/Contenido.astro';
+import contenido from '../content/404.html?raw';
+---
+<Base title={"Página no encontrada | Horizonte Digital"} description={"La página solicitada no está disponible en Horizonte Digital."} theme="theme-technology" depth={0} noindex absoluteRoot>
+  <Contenido html={contenido} />
+</Base>
